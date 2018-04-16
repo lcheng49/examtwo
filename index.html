@@ -8,14 +8,13 @@
   <script>
   function hideImage(){
   document.getElementById("hide").onclick = function() {
-    document.getElementById("update").style.visibility = "hidden";
-    var other = document.getElementById("stay");
-    other.style.align = "center;"
+    document.getElementById("update").style.display = "none";
+    document.getElementById("pictures").style.alignItems = "center";
 }
 }
   function showImage(){
     document.getElementById("show").onclick = function() {
-      document.getElementById("update").style.visibility = "visible";
+      document.getElementById("update").style.display = "flex";
   }
 }
 </script>
