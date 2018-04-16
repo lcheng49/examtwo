@@ -5,16 +5,22 @@
   <meta http-equiv="refresh" content="10">
 	<title>Final Exam</title>
   <link rel="stylesheet" href="css/style.css">
-
+  <script>
+  function hideImage(){
+  document.getElementById("hideImage").onclick = function() {
+    document.getElementById("update").style.visibility = "hidden";
+}
+}
+</script>
 </head>
 <body>
     <h1>Luke Cheng</h1>
-    <div class = pictures>
-      <img class = "update" src = "images/examPic.JPG" />
-      <img class = "stay" src = "images/UMSI-logo.jpg" />
+    <div id = pictures>
+      <img id = "update" src = "images/examPic.JPG" />
+      <img id = "stay" src = "images/UMSI-logo.jpg" />
     </div>
   <br  />
-    <input type="submit" value="Hide Image">
-    <input type = "submit" value = "Show Image">
+    <button onclick="hideImage()">Hide Image</button>
+    <button onclick="showImage()">Show Image</button>
 </body>
 </html>
