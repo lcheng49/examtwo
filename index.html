@@ -7,9 +7,14 @@
   <link rel="stylesheet" href="css/style.css">
   <script>
   function hideImage(){
-  document.getElementById("hideImage").onclick = function() {
+  document.getElementById("hide").onclick = function() {
     document.getElementById("update").style.visibility = "hidden";
 }
+}
+  function showImage(){
+    document.getElementById("show").onclick = function() {
+      document.getElementById("update").style.visibility = "visible";
+  }
 }
 </script>
 </head>
@@ -20,7 +25,7 @@
       <img id = "stay" src = "images/UMSI-logo.jpg" />
     </div>
   <br  />
-    <button onclick="hideImage()">Hide Image</button>
-    <button onclick="showImage()">Show Image</button>
+    <button id = "hide" onclick="hideImage()">Hide Image</button>
+    <button id = "show" onclick="showImage()">Show Image</button>
 </body>
 </html>
